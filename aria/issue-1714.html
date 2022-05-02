@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ARIA issue 1714 test case</title>
+    <style>
+      div {
+        padding: .5em;
+        margin: .5em;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Example A: Parent (via aria-owns) is hidden in CSS display none</h1>
+      <div style="display: none" aria-owns="child_a">Example A: PARENT</div>
+      <div id="child_a">Example A: CHILD</div>
+    </div>
+    <div>
+      <h1>Example B: Parent (via aria-owns) is hidden in CSS visibility hidden</h1>
+      <div style="visibility: hidden" aria-owns="child_B">Example B: PARENT</div>
+      <div id="child_b">Example B: CHILD</div>
+    </div>
+    <div>
+      <h1>Example C: Parent (via aria-owns) is hidden by aria-hidden</h1>
+      <div aria-hidden="true" aria-owns="child_c">Example C: PARENT</div>
+      <div id="child_c">Example C: CHILD</div>
+    </div>
+  </body>
+</html>
