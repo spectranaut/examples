@@ -14,18 +14,39 @@
   <body>
     <div>
       <h1>Example A: Parent (via aria-owns) is hidden in CSS display none</h1>
-      <div style="display: none" aria-owns="child_a">Example A: PARENT</div>
-      <div id="child_a">Example A: CHILD</div>
+      <div style="display: none" aria-owns="child_a">
+        PARENT A
+      </div>
+      <div id="child_a">
+        CHILD A
+      </div>
     </div>
     <div>
       <h1>Example B: Parent (via aria-owns) is hidden in CSS visibility hidden</h1>
-      <div style="visibility: hidden" aria-owns="child_B">Example B: PARENT</div>
-      <div id="child_b">Example B: CHILD</div>
+      <div style="visibility: hidden" aria-owns="child_b">
+        PARENT B
+      </div>
+      <div id="child_b">
+        CHILD B
+      </div>
     </div>
     <div>
       <h1>Example C: Parent (via aria-owns) is hidden by aria-hidden</h1>
-      <div aria-hidden="true" aria-owns="child_c">Example C: PARENT</div>
-      <div id="child_c">Example C: CHILD</div>
+      <div aria-hidden="true" aria-owns="child_c">
+        PARENT C
+      </div>
+      <div id="child_c">
+        CHILD C
+      </div>
+    </div>
+    <div>
+      <h1>Example D: Parent (via aria-owns) is not hidden</h1>
+      <div aria-owns="child_d">
+        PARENT D
+      </div>
+      <div id="child_d">
+        CHILD D
+      </div>
     </div>
   </body>
 </html>
