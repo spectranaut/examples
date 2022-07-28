@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Name + Unnamed Forms Test Case</title>
+    <style>
+      .box {
+        padding: .5em;
+        margin: .5em;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Named Form (Native Element)</h1>
+      <form aria-label="foo native" class="box">
+        <label for="check">Check the box: </label>
+        <input type="checkbox" name="check" id="check">
+      </form>
+    </div>
+    <div class="box">
+      <h1>Unnamed Form (Native Element)</h1>
+      <form class="box">
+        <label for="check">Check the box: </label>
+        <input type="checkbox" name="check" id="check">
+      </form>
+    </div>
+    <div class="box">
+      <h1>Named Form (ARIA Role)</h1>
+      <div role="form" aria-label="foo role" class="box">
+        <label for="check">Check the box: </label>
+        <input type="checkbox" name="check" id="check">
+      </div>
+    </div>
+    <div class="box">
+      <h1>Unnamed Form (ARIA Role)</h1>
+      <div role="form" class="box">
+        <label for="check">Check the box: </label>
+        <input type="checkbox" name="check" id="check">
+      </div>
+    </div>
+  </body>
+</html>
