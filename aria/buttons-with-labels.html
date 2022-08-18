@@ -1,0 +1,33 @@
+<!--
+@SCRIPT:
+  labelledButton.AXTitle
+  labelledButton.AXDescription
+  labelledButton.AXTitleUIElement
+  ariaLabelledLabel.AXTitle
+  ariaLabelledLabel.AXDescription
+  ariaLabelledLabel.AXTitleUIElement
+-->
+<!DOCTYPE html>
+<html>
+<body>
+  <h1> Example 1: VoiceOver voices the label and the button </h1>
+  <div>
+    <label for="labelledButton">
+      the label of the button:
+    </label>
+    <button id="labelledButton" name="labelledButton" type="button">
+      foobar
+    </button>
+  </div>
+
+  <h1> Example 2: VoiceOver voices the label's aria-label only</h1>
+  <div>
+    <label for="ariaLabelledLabel" aria-label="the label's aria label">
+      the visual label (there is also an aria-label on this label element):
+    </label>
+    <button id="ariaLabelledLabel" type="button">
+      foobar
+    </button>
+  </div>
+</body>
+</html>
