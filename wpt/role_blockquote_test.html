@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://web-platform.test:8000/core-aam/acacia/json/blockquote.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <title>role blockquote</title>
+  <script src="./role_blockquote_test_files/testharness.js"></script>
+  <script src="./role_blockquote_test_files/testharnessreport.js"></script>
+  <script src="./role_blockquote_test_files/testdriver.js"></script>
+  <script src="./role_blockquote_test_files/testdriver-vendor.js"></script>
+  <script src="./role_blockquote_test_files/testdriver-actions.js"></script>
+  <script src="./role_blockquote_test_files/role-map.js"></script>
+  <script src="./role_blockquote_test_files/aam-utils.js"></script>
+<style>html {    font-family:DejaVu Sans, Bitstream Vera Sans, Arial, Sans;}#log .warning,#log .warning a {  color: black;  background: yellow;}#log .error,#log .error a {  color: white;  background: red;}section#summary {    margin-bottom:1em;}table#results {    border-collapse:collapse;    table-layout:fixed;    width:100%;}table#results > thead > tr > th:first-child,table#results > tbody > tr > td:first-child {    width:8em;}table#results > thead > tr > th:last-child,table#results > thead > tr > td:last-child {    width:50%;}table#results.assertions > thead > tr > th:last-child,table#results.assertions > tbody > tr > td:last-child {    width:35%;}table#results > thead > > tr > th {    padding:0;    padding-bottom:0.5em;    border-bottom:medium solid black;}table#results > tbody > tr> td {    padding:1em;    padding-bottom:0.5em;    border-bottom:thin solid black;}.pass {    color:green;}.fail {    color:red;}tr.timeout {    color:red;}tr.notrun {    color:blue;}tr.optionalunsupported {    color:blue;}.ok {    color:green;}.error {    color:red;}.pass, .fail, .timeout, .notrun, .optionalunsupported .ok, .timeout, .error {    font-variant:small-caps;}table#results span {    display:block;}table#results span.expected {    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;    white-space:pre;}table#results span.actual {    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;    white-space:pre;}</style></head>
+<body>
+
+<div id="test" role="blockquote">quote</div>
+
+<script>
+  AAMUtils.verifyAPI('test', rolemap['blockquote'], 'role=blockquote');
+</script>
+
+
+
+<div id="log"><section id="summary"><h2>Summary</h2><section><p>Harness status: <span class="ok">OK</span></p><button id="rerun">Rerun</button></section><p>Found 4 tests</p><div><div><label><input type="checkbox" checked="checked">4 <span class="pass">Pass</span></label></div></div></section><section><h2>Details</h2><table id="results" class=""><thead><tr><th>Result</th><th>Test Name</th><th>Message</th></tr></thead><tbody><tr class="overall-pass"><td class="pass">Pass</td><td>api: Atspi, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary><table><tr class="overall-pass"><td class="pass">Pass</td><td><pre><strong>assert_equals</strong>("match", "match")
+    at Test.&lt;anonymous&gt; ( /core-aam/acacia/json/aam-utils.js:28:13)</pre></td></tr></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: AXAPI, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: IAccessible2, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: UIA, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr></tbody></table></section></div></body></html>
