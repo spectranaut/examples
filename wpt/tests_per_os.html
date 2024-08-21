@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset=utf-8>
+<html>
+<head>
+  <title>operating system specific tests</title>
+  <style>
+  </style>
+</head>
+<body>
+
+<h2>Individual test files for each operating system</h2>
+
+<p>This example assumes different test files for each operating system, and the test harness runs only the tests appropriate to the operating system.<p>
+
+<p>These three test files, in combination, test all the statements in Core-AAM <a href="https://w3c.github.io/core-aam/#role-map-heading">role=heading mapping table</a>.</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+<caption>WPT.fyi directory view</caption>
+<tr style="font-weight: bold;">
+<th></th><th>Edge on Windows</th><th>Firefox on Windows</th><th>Chromium on Linux</th><th>Firefox on Linux</th><th>Chromium on macOS</th><th>Firefox on macOS</th><th>Safari on macOS</th>
+</tr>
+<tr>
+<th>`role="heading"` (Windows)</th><td style="background-color: #bcf5bc">2/2</td><td style="background-color: #f5bcbc">1/2</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td>
+</tr>
+<tr>
+<th>`role="heading"` (Linux)</th><td>n/a</td><td>n/a</td><td style="background-color: #bcf5bc">1/1</td><td style="background-color: #bcf5bc">1/1</td><td>n/a</td><td>n/a</td><td>n/a</td>
+</tr>
+<tr>
+<th>`role="heading"` (macOS)</th><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td style="background-color: #bcf5bc">1/1</td><td style="background-color: #bcf5bc">1/1</td><td style="background-color: #bcf5bc">1/1</td>
+</tr>
+</table>
+
+
+</body>
+</html>
