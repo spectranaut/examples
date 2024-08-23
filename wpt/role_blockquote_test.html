@@ -1,7 +1,6 @@
-<!doctype html>
-<meta charset=utf-8>
-<html>
-<head>
+<html><head><meta charset="utf-8">
+
+
   <title>role blockquote</title>
   <script src="/resources/testharness.js"></script>
   <script src="/resources/testharnessreport.js"></script>
@@ -10,14 +9,16 @@
   <script src="/resources/testdriver-actions.js"></script>
   <script src="scripts/role-map.js"></script>
   <script src="scripts/aam-utils.js"></script>
-</head>
+<style>html {    font-family:DejaVu Sans, Bitstream Vera Sans, Arial, Sans;}#log .warning,#log .warning a {  color: black;  background: yellow;}#log .error,#log .error a {  color: white;  background: red;}section#summary {    margin-bottom:1em;}table#results {    border-collapse:collapse;    table-layout:fixed;    width:100%;}table#results > thead > tr > th:first-child,table#results > tbody > tr > td:first-child {    width:8em;}table#results > thead > tr > th:last-child,table#results > thead > tr > td:last-child {    width:50%;}table#results.assertions > thead > tr > th:last-child,table#results.assertions > tbody > tr > td:last-child {    width:35%;}table#results > thead > > tr > th {    padding:0;    padding-bottom:0.5em;    border-bottom:medium solid black;}table#results > tbody > tr> td {    padding:1em;    padding-bottom:0.5em;    border-bottom:thin solid black;}.pass {    color:green;}.fail {    color:red;}tr.timeout {    color:red;}tr.notrun {    color:blue;}tr.optionalunsupported {    color:blue;}.ok {    color:green;}.error {    color:red;}.pass, .fail, .timeout, .notrun, .optionalunsupported .ok, .timeout, .error {    font-variant:small-caps;}table#results span {    display:block;}table#results span.expected {    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;    white-space:pre;}table#results span.actual {    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;    white-space:pre;}</style></head>
 <body>
 
-<div id=test role=blockquote>quote</div>
+<div id="test" role="blockquote">quote</div>
 
 <script>
   AAMUtils.verifyAPI('test', rolemap['blockquote'], 'role=blockquote');
 </script>
 
-</body>
-</html>
+
+
+<div id="log"><section id="summary"><h2>Summary</h2><section><p>Harness status: <span class="ok">OK</span></p><button id="rerun">Rerun</button></section><p>Found 4 tests</p><div><div><label><input type="checkbox" checked="checked">4 <span class="pass">Pass</span></label></div></div></section><section><h2>Details</h2><table id="results" class=""><thead><tr><th>Result</th><th>Test Name</th><th>Message</th></tr></thead><tbody><tr class="overall-pass"><td class="pass">Pass</td><td>api: Atspi, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary><table><tr class="overall-pass"><td class="pass">Pass</td><td><pre><strong>assert_equals</strong>("Pass", "Pass", "property role is block quote")
+    at Object.runAssertions ( /core-aam/json-test-example/scripts/aam-utils.js:20:7)</pre></td></tr></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: AXAPI, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: IAccessible2, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr><tr class="overall-pass"><td class="pass">Pass</td><td>api: UIA, role=blockquote</td><td><pre></pre><details><summary>Asserts run</summary>No asserts ran<table></table></details></td></tr></tbody></table></section></div></body></html>
