@@ -1,0 +1,23 @@
+<h1>Combobox 1.0</h1>
+
+<p>Simpliifed from: https://techservicesillinois.github.io/accessibility/aria-examples/combobox.html<p>
+
+<div id="cb1-label">Fruit:</div>
+<div id="cb1-wrapper" aria-labelledby="cb1-label" class="cb-wrapper" role="combobox" aria-expanded="false" aria-haspopup="true">
+
+   <input id="cb1" type="text" class="cb-edit" aria-autocomplete="both" aria-controls="cb1-list" aria-activedescendant="">
+   <div id="cb1-btn" class="cb-btn" role="button" aria-label="Toggle list"></div>
+
+   <span id="cb1-status" role="status" class="cb-status"></span>
+
+   <div id="cb1-list" role="listbox" class="cb-list cb-collapsible">
+      <div id="cb1-opt0" role="option" aria-selected="false">Banana</div>
+      <div id="cb1-opt1" role="option" aria-selected="false">Blueberry</div>
+      <div id="cb1-opt2" role="option" aria-selected="false">Apple</div>
+      <div id="cb1-opt3" role="option" aria-selected="false">Orange</div>
+      <div id="cb1-opt4" role="option" aria-selected="false">Strawberry</div>
+      <div id="cb1-opt5" role="option" aria-selected="false">Kiwi</div>
+      <div id="cb1-opt6" role="option" aria-selected="false">Ugli Fruit</div>
+   </div>
+
+</div>
