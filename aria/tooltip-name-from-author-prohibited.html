@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Name From Author Prohibited on Tooltip</title>
+    <style>
+      .box {
+        padding: .5em;
+        margin: .5em;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <button aria-describedby=tooltip>Click Me</button>
+    <span role=tooltip id=tooltip class=box aria-label=misleading>This button does nothing.</span>
+  </body>
+</html>
