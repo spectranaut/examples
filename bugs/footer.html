@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Test Footer in Rotor</title>
+  <style>
+    .box {
+      padding: .5em;
+      margin: .5em;
+      border: 2px solid;
+    }
+  </style>
+</head>
+<body>
+<article class="box">
+  <h1>Article</h1>
+  <p>
+    Article Content
+  </p>
+  <footer class="box">
+    <p>This is a footer element in "sectioning" content, like an article -- AXRole: AXGroup, AXSubrole: AXLandmarkContentInfo</p>
+  </footer>
+</article>
+  <footer class="box">
+    <p>This footer element is scoped to BODY -- AXRole: AXGroup, AXSubrole: AXSectionFooter</p>
+  </footer>
+</body>
+</html>
