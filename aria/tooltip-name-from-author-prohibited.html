@@ -12,7 +12,14 @@
     </style>
   </head>
   <body>
+    <h1>Tooltip</h1>
     <button aria-describedby=tooltip>Click Me</button>
-    <span role=tooltip id=tooltip class=box aria-label=misleading>This button does nothing.</span>
+    <span role=tooltip id=tooltip class=box aria-label=misleading>This is a tooltip.</span>
+    <h1>Role mark</h1>
+    <button aria-describedby=mark>Click Me - describedby points to mark</button>
+    <span role=mark id=mark aria-label=misleading>This span has role mark</span>
+    <h1>Implicit role generic</h1>
+    <button aria-describedby=span>Click Me - describedby points to generic</button>
+    <span id=span aria-label=misleading>This span is a span</span>
   </body>
 </html>
