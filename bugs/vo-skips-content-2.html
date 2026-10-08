@@ -13,12 +13,11 @@
           margin: .5em;
           border: 1px solid;
       }
-
     </style>
   </head>
   <body>
     <a href="#">Link (before nested tabindex=-1)</a>
-    <p>In this scenario, there is no bug. It might be related to the fact that now the divs with tabindex=-1 have `aria-name` on them.</p>
+    <p>In this scenario, the nexted divs with `tabindex=-1` have `aria-label` set on them.</p>
     <div tabindex="-1" aria-label="Buggy Div" class=outerTabindex>
       <div>
         <div tabindex="-1" aria-label="Buggy inner Div">
