@@ -1,20 +1,34 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Test</title>
+        <title>VO Skips Content Bug - divs without names</title>
+        <style>
+          .outerTabindex {
+              padding: .5em;
+              margin: .5em;
+              border: 2px solid;
+          }
+          .landmark {
+              padding: .5em;
+              margin: .5em;
+              border: 1px solid;
+          }
+        </style>
     </head>
     <body>
-        <a href="#">Test</a>
-        <div tabindex="-1">
+        <a href="#">Link (before nested tabindex=-1)</a>
+        <div tabindex="-1" class=outerTabindex>
             <div tabindex="-1">
-                <header>
+                <header class=landmark>
                     <h2>Header</h2>
-                    <a href="#">header link 1</a><a href="#">header link 2</a>
+                    <a href="#">foo</a>, <a href="#">bar</a>
                 </header>
-                <main><a href="#">main link 1</a><a href="#">main link 2</a></main>
-                <footer>
+                <main class=landmark>
+                  Main content: <a href="#">biz</a>, <a href="#">baz</a>
+                </main>
+                <footer class=landmark>
                     <h2>Footer</h2>
-                    <a href="#">footer link 1</a><a href="#">footer link 2</a>
+                    <a href="#">cat</a>, <a href="#">dog</a>
                 </footer>
             </div>
         </div>

@@ -1,22 +1,33 @@
-<!doctype html>
+vo<!doctype html>
 <html lang="en">
     <head>
-        <title>Test</title>
+        <title>VO Skips Content Bug - divs with names</title>
+        <style>
+          .outerTabindex {
+              padding: .5em;
+              margin: .5em;
+              border: 2px solid;
+          }
+        </style>
     </head>
     <body>
-        <a href="#">Test</a>
-        <div tabindex="-1" aria-label="test1">
+        <a href="#">Link (before nested tabindex=-1)</a>
+        <p>In this scenario, there is no bug. It might be related to the fact that now the divs with tabindex=-1 have `aria-name` on them.</p>
+        <div tabindex="-1" aria-label="Buggy Div" class=outerTabindex>
             <div>
-                <div tabindex="-1" aria-label="test">
-                    <div>
-                        <div>Header</div>
-                        <a href="#">header link 1</a><a href="#">header link 2</a>
-                    </div>
-                    <div><a href="#">main link 1</a><a href="#">main link 2</a></div>
-                    <div>
-                        <div>Footer</div>
-                        <a href="#">footer link 1</a><a href="#">footer link 2</a>
-                    </div>
+                <div tabindex="-1" aria-label="Buggy inner Div">
+
+                  <div>
+                    <h2>Some things</h2>
+                    <a href="#">foo</a>, <a href="#">bar</a>
+                  </div>
+                  <div>
+                    More things: <a href="#">biz</a>, <a href="#">baz</a>
+                  </div>
+                  <div>
+                    <h2>Other things</h2>
+                    <a href="#">cat</a>, <a href="#">dog</a>
+                  </div>
                 </div>
             </div>
         </div>
