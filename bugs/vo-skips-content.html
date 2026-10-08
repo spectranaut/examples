@@ -1,36 +1,36 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>VO Skips Content Bug - divs without names</title>
-        <style>
-          .outerTabindex {
-              padding: .5em;
-              margin: .5em;
-              border: 2px solid;
-          }
-          .landmark {
-              padding: .5em;
-              margin: .5em;
-              border: 1px solid;
-          }
-        </style>
-    </head>
-    <body>
-        <a href="#">Link (before nested tabindex=-1)</a>
-        <div tabindex="-1" class=outerTabindex>
-            <div tabindex="-1">
-                <header class=landmark>
-                    <h2>Header</h2>
-                    <a href="#">foo</a>, <a href="#">bar</a>
-                </header>
-                <main class=landmark>
-                  Main content: <a href="#">biz</a>, <a href="#">baz</a>
-                </main>
-                <footer class=landmark>
-                    <h2>Footer</h2>
-                    <a href="#">cat</a>, <a href="#">dog</a>
-                </footer>
-            </div>
-        </div>
-    </body>
+  <head>
+    <title>VO Skips Content Bug - divs without names</title>
+    <style>
+      .outerTabindex {
+          padding: .5em;
+          margin: .5em;
+          border: 2px solid;
+      }
+      .landmark {
+          padding: .5em;
+          margin: .5em;
+          border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Link (before nested tabindex=-1)</a>
+    <div tabindex="-1" class=outerTabindex>
+      <div tabindex="-1">
+        <header class=landmark>
+          <h2>Header</h2>
+          <a href="#">foo</a>, <a href="#">bar</a>
+        </header>
+        <main class=landmark>
+          Main content: <a href="#">biz</a>, <a href="#">baz</a>
+        </main>
+        <footer class=landmark>
+          <h2>Footer</h2>
+          <a href="#">cat</a>, <a href="#">dog</a>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
