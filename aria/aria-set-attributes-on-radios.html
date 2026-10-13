@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>`aria-setsize` and `aria-posinset` on radios</title>
+    <style>
+      .example {
+        padding: .5em;
+        margin: .5em;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>`aria-setsize` and `aria-posinset` on radios</h1>
+    <div class="example">
+      <h2>Example A: HTML input type=radios with name attribute</h2>
+      <p>
+        The first (biz) radio has: `aria-setsize=6 aria-posinset=5` </br>
+        The second (baz) radio has: `aria-setsize=6 aria-posinset=6`
+      </p>
+      <div>
+        <input aria-setsize=6 aria-posinset=5 type="radio" value="biz" id="biz" name="petnames" checked>
+        <label for="biz">Biz</label>
+        <input aria-setsize=6 aria-posinset=6 type="radio" value="baz" id="baz" name="petnames">
+        <label for="baz">Baz</label>
+      </div>
+    </div>
+    <div class="example">
+      <h2>Example B: ARIA role=radio in radiogroup</h2>
+      <p>
+        The first (Fido) radio has: `aria-setsize=3 aria-posinset=2` </br>
+        The second (Scout) radio has: `aria-setsize=3 aria-posinset=3`
+      </p>
+      <div role="radiogroup" aria-label="Dog Names">
+        <button aria-setsize=3 aria-posinset=2 role="radio">Fido</button>
+        <button aria-setsize=3 aria-posinset=3 role="radio">Scout</button>
+      </div>
+    </div>
+  </body>
+</html>
